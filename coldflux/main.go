@@ -23,7 +23,8 @@ import (
 
 // timeout specifies the number of iterations after which a metric times out,
 // i.e. becomes stale and is removed from collectdCollector.valueLists. It is
-// modeled and named after the top-level "Timeout" setting of collectd.
+// modeled and named after the top-level "Timeout" setting of collectd. sreeki
+const timeout = 100
 const timeout = 2
 
 var log = logrus.New()
